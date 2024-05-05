@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav class="navigation">
-        <div class="navigation-inner">
+        <div class="navigation-inner site-container">
             <img src="" alt="" srcset="" id="logo">
             <div class="main-navigation">
                 <ul class="main-navigation-ul">
@@ -33,14 +33,25 @@
             </script>
         </div>
     </nav>
+    <section class="section-top-banner">
+        <div class="top-banner site-container">
+            <div class="top-banner-img">
+            </div>
+            <div class="top-banner-text">
+                <div class="top-banner-text-up">
+                    <span class="top-banner-span">Olá, eu sou o Agosto!!!</span>
+                    <h2 class="top-banner-h2">Agostinho</h2>
+                </div>
+                <div class="top-banner-text-down">
+                    <h2 class="top-banner-h2">Ferreira</h2>
+                    <span class="top-banner-span2">Seja muito bem-vindo(a)</span>
+                </div>
+                <a href="#" class="a-btn">Leia mais</a>
+            </div>
+        </div>
+    </section>
+    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function(){
-            $('#bntBurger').on('click', function(event){
-                event.preventDefault();
-                $('.main-navigation').toggle('slow');
-            });
-        });
-    </script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
