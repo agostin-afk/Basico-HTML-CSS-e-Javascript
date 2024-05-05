@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Projeto do curso</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="navigation-inner">
+            <img src="" alt="" srcset="" id="logo">
+            <div class="main-navigation">
+                <ul class="main-navigation-ul">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+            <div id="bntBurger" class="burger-container" onclick="menuFn(this)">
+                <a href="">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </a>
+            </div>
+            <script>
+                function menuFn(x){
+                    x.classList.toggle("change");
+                }
+            </script>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#bntBurger').on('click', function(event){
+                event.preventDefault();
+                $('.main-navigation').toggle('slow');
+            });
+        });
+    </script>
+</body>
+</html>
